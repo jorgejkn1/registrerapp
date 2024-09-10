@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ACCESO  CAMARA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/registro-codigo"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Verificacion presencial</ion-card-title>
+      <ion-card-subtitle>Ingrese los digitos en su aplicacion</ion-card-subtitle>
+    </ion-card-header>
+    <div class="logo-camara">
+      <img alt="" src="../../../assets/img/codigoseguridad.png" width="600" sizes="400"/>
+    </div>
+  </ion-card>
+
+  <div class="btn-confirmacion">
+    <ion-button color="warning" style="padding-right: 30px;" routerLink="/qr">Visualizar QR</ion-button>
+  </div>
+</ion-content>

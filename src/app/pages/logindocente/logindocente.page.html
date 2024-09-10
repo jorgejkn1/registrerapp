@@ -1,0 +1,66 @@
+<ion-app>
+
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>MENÚ</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <p style="text-align: center;">Todos los derechos reservados a RegistrAPP Duoc UC.</p>
+      <ion-button expand="block" class="btn-cerrar-sesion" color="warning" routerLink="/login">
+        Cerrar Sesión
+      </ion-button>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>MENÚ</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <div style="text-align: center;">
+        <h2>Bienvenido, Profesor</h2>
+      </div>
+
+ 
+      <div class="gift_anima" style="display: flex; justify-content: center; margin: 20px 0;">
+        <img alt="login docente" src="../../../assets/img/logindoce.avif" style="max-width: 100%; height: auto;" />
+      </div>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-md="6" style="text-align: center;">
+            <ion-button expand="block" color="secondary" routerLink="/mostrarqr">
+              Iniciar Clase
+            </ion-button>
+          </ion-col>
+          <ion-col size="12" size-md="6" style="text-align: center;">
+            <ion-button expand="block" color="secondary" routerLink="/guardarclase">
+              Ver Secciones
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12" style="text-align: center;">
+            <ion-button expand="block" color="tertiary" routerLink="/registro">
+              Ver Clase
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </div>
+</ion-app>
+
+
+
+

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>INGRESO CODIGO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/intro"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-card>
+    <img alt="" src="../../../assets/img/senal-de-stop.png" width="600" />
+    <ion-card-header>
+      <ion-input labelPlacement="floating" [counter]="true" maxlength="6"></ion-input>
+      <ion-card-subtitle>Ingrese los Digitos</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <div class="btn-conf-cod-num">
+    <ion-button expand="block" routerLink="/acceso-camera">Confirmar</ion-button>
+  </div>
+
+</ion-content>

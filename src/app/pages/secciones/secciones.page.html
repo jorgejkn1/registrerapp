@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>SECCION</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Programacion Movil</ion-card-title>
+      <ion-card-subtitle>Alumnos</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/Pikachu.png" />
+          </ion-thumbnail>
+          <ion-label>Alfredo Ruiz</ion-label>
+          <ion-label>Presente</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/Eliza.png" />
+          </ion-thumbnail>
+          <ion-label>Elizabeth Saez</ion-label>
+          <ion-label>Presente</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/Jorge.png" />
+          </ion-thumbnail>
+          <ion-label>Jorge Valenzuela</ion-label>
+          <ion-label>Ausente</ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/freddy.png" />
+          </ion-thumbnail>
+          <ion-label>Freddy Guzman</ion-label>
+          <ion-label>Presente</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="btn-guardar-clase">
+    <ion-button routerLink="/confirclase">Registrar Clase</ion-button>
+  </div>
+</ion-content>

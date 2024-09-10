@@ -1,0 +1,19 @@
+.logo-login ion-img {
+    margin-bottom: 30px;
+  }
+  
+  a {
+    color: var(--ion-color-primary);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-login ion-button {
+    --border-radius: 8px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+  }
+  

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ACCESO  CAMARA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/registro-codigo"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¡Acceso a la Camara!</ion-card-title>
+      <ion-card-subtitle>Necesitamos acceso a la camara para poder escanear el QR</ion-card-subtitle>
+    </ion-card-header>
+    <div class="logo-camara">
+      <img alt="" src="../../../assets/img/camara-de-telefono-inteligente.png" width="300" />
+    </div>
+  </ion-card>
+
+  <div class="btn-confirmacion">
+    <ion-button color="warning" style="padding-right: 30px;" routerLink="/scaner">SI</ion-button>
+    <ion-button color="warning" style="padding-left: 30px;">NO</ion-button>
+  </div>
+</ion-content>

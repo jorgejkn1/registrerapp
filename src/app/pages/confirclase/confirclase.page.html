@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Clase Finalizada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-buttons slot="start">
+  <ion-back-button default-href="/home"></ion-back-button>
+</ion-buttons>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <!-- Imagen centrada -->
+    <div class="img-confirmar" style="display: flex; justify-content: center; margin-top: 20px;">
+      <img alt="Clase Finalizada" src="../../../assets/img/feliz.jpg" style="max-width: 100%; height: auto;" />
+    </div>
+
+    <!-- Título y subtítulo de la confirmación -->
+    <ion-card-header>
+      <ion-card-title>Confirmación de Clase</ion-card-title>
+      <ion-card-subtitle>Estimado(a) [Nombre],</ion-card-subtitle>
+    </ion-card-header>
+
+    <!-- Mensaje de confirmación -->
+    <ion-card-content>
+      Le confirmamos que su clase del día [fecha] ha sido registrada correctamente. Para cualquier duda, por favor, contacte al área correspondiente.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botones -->
+  <div style="display: flex; justify-content: space-between; margin-top: 20px; padding: 0 20px;">
+    <ion-button expand="block" color="primary" routerLink="/logindocente">Regresar</ion-button>
+    <ion-button expand="block" color="secondary" (click)="downloadPDF()">Descargar PDF</ion-button>
+  </div>
+</ion-content>

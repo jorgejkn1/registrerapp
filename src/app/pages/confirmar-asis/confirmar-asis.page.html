@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>CONFIRMAR ASIS..</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-buttons slot="start">
+  <ion-back-button default-href="/home"></ion-back-button>
+</ion-buttons>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <div class="img-confirmar">
+      <img alt="" src="../../../assets/img/cheque.png" width="200" />
+    </div>
+    <ion-card-header>
+      <ion-card-title>Confirmación de Asistencia</ion-card-title>
+      <ion-card-subtitle>Estimado(a) [Nombre],</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Le confirmamos que su asistencia del día [fecha] ha sido registrada correctamente. Para cualquier duda, por favor,
+      contacte al área correspondiente.
+    </ion-card-content>
+
+    
+    <ion-button expand="block" (click)="goToIntro()">Volver a Intro</ion-button>
+  </ion-card>
+</ion-content>

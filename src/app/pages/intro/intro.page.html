@@ -1,0 +1,75 @@
+<ion-app>
+  
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>MENÚ</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <p style="text-align: center;">Todos los derechos reservados a RegistrAPP Duoc UC.</p>
+      <ion-button expand="block" class="btn-cerrar-sesion" color="warning" routerLink="/login">
+        Cerrar Sesión
+      </ion-button>
+    </ion-content>
+  </ion-menu>
+
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Bienvenido Alumno</ion-title>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-card (click)="goToregistrocodigo()">
+        <img src="assets/img/Hola.png" alt="Programación de aplicaciones móviles"/>
+        <ion-card-content>
+          <h2>Programación de aplicaciones móviles</h2>
+          <p>Horario: 8:30 - 10:40</p>
+          <p>Sala: L08 Laboratorio de computación</p>
+          <p>Sección: 001D10</p>
+          <p>Profesor: Freddy Campos</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card (click)="goToregistrocodigo()">
+        <img src="assets/img/etica.png" alt="Ética Profesional"/>
+        <ion-card-content>
+          <h2>Ética Profesional</h2>
+          <p>Horario: 12:11 - 1:40</p>
+          <p>Sala: Sala 424</p>
+          <p>Sección: 001D</p>
+          <p>Profesor: Jaime Lopez</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-footer>
+        <ion-toolbar>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4" class="ion-text-center">
+                <ion-icon name="search-outline"></ion-icon>
+                <p>Buscar</p>
+              </ion-col>
+              <ion-col size="4" class="ion-text-center">
+                <ion-icon name="heart-outline"></ion-icon>
+                <p>Guardado</p>
+              </ion-col>
+              <ion-col size="4" class="ion-text-center">
+                <ion-icon name="filter-outline"></ion-icon>
+                <p>Filtrar</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-toolbar>
+      </ion-footer>
+    </ion-content>
+  </div>
+</ion-app>
+
